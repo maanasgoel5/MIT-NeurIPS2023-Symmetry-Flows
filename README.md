@@ -1,10 +1,11 @@
 # Symmetry-Informed Normalizing Flows for Gravitational Wave Analysis
+A Summer Research Project by Maanas Goel at the MIT LIGO Lab (2023)
 
-**Project Status:** Archive (Completed Summer 2023)
+[**LinkedIn: Maanas Goel**](https://www.linkedin.com/in/maanas-goel/) | [**Email: maanasgoel5@gmail.com**](mailto:maanasgoel5@gmail.com)
 
-This repository contains the work from a research project conducted at the MIT Kavli Institute for Astrophysics and Space Research during the summer of 2023. This project was completed under the supervision of Dr. Deep Chatterjee (University of Illinois Urbana-Champaign) and Dr. Erik Katsavounidis (MIT).
+---
 
-The project explores the use of symmetry-informed normalizing flows to improve the efficiency and accuracy of likelihood-free inference for gravitational wave data.
+This repository contains the work from a research project conducted at the **MIT Kavli Institute for Astrophysics and Space Research**. The project was supervised by MIT Research Scientists Dr. Deep Chatterjee and Dr. Erik Katsavounidis.
 
 ---
 
@@ -72,11 +73,6 @@ This section provides a detailed breakdown of the key files and notebooks within
 
 -   `sine-gaussian-without-similarity-embedding-flow-weights.pth`
     -   The saved weights of the baseline flow trained *without* the similarity embedding for the SG model.
-
-## Contributor
-
--   **Maanas Goel**
--   **Email:** [maanasgoel5@gmail.com](mailto:maanasgoel5@gmail.com)
 
 ---
 
