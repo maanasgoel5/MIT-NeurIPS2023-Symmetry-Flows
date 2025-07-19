@@ -1,14 +1,11 @@
 # Symmetry-Informed Normalizing Flows for Gravitational Wave Analysis
-### A Summer Research Project by Maanas Goel at the MIT LIGO Lab (2023)
-[**LinkedIn**](https://www.linkedin.com/in/maanas-goel/) | [**Email**](mailto:maanasgoel5@gmail.com)
+
+A Summer Research Project by Maanas Goel at the MIT LIGO Lab (2023)
+
+[**LinkedIn: Maanas Goel**](https://www.linkedin.com/in/maanas-goel/) | [**Email: maanasgoel5@gmail.com**](mailto:maanasgoel5@gmail.com)
 
 ---
-#### About the MIT LIGO Laboratory
-This project was developed during a scientific research internship at the **MIT LIGO Laboratory**, which is hosted by the **MIT Kavli Institute for Astrophysics and Space Research (MKI)**.
-
-The U.S. National Science Foundation Laser Interferometer Gravitational-wave Observatory (NSF LIGO) was designed to open the field of gravitational-wave astrophysics through the direct detection of gravitational waves. In partnership with Caltech, the MIT LIGO Lab operates multi-kilometer-scale interferometers to measure minute ripples in space-time from cataclysmic cosmic events, such as colliding black holes and supernovae. This work contributes to the broader scientific mission of using gravitational waves to make new astronomical discoveries.
-
-This research was supervised by MIT Research Scientists Dr. Deep Chatterjee and Dr. Erik Katsavounidis, and supported by NSF award 2117997.
+This project was developed during a scientific research internship at the MIT LIGO Laboratory, which is hosted by the MIT Kavli Institute for Astrophysics and Space Research (MKI). LIGO is a joint effort between Caltech and MIT, supported by the National Science Foundation, focused on detecting and studying gravitational waves. This research was supervised by MIT Research Scientists Dr. Deep Chatterjee and Dr. Erik Katsavounidis, and supported by NSF award 2117997.
 ---
 
 ## Project Overview
@@ -75,7 +72,3 @@ This section provides a detailed breakdown of the key files and notebooks within
 
 -   `sine-gaussian-without-similarity-embedding-flow-weights.pth`
     -   The saved weights of the baseline flow trained *without* the similarity embedding for the SG model.
-
----
-
-*This work was conducted as part of the Summer 2023 research program at the MIT Kavli Institute for Astrophysics and Space Research and was supported by NSF award 2117997.*
