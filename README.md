@@ -4,7 +4,7 @@ This project was developed during a scientific research internship in Summer 202
 
 This branch of the repository contains notebooks and weights of trained models used for the [ML4PS](https://ml4physicalsciences.github.io/2023/) workshop (submission 69) at NeurIPS 2023. The final paper draft can be found in the [papers](https://ml4physicalsciences.github.io/2023/#papers) section of the workshop website.
 
-**Contributor:** Maanas Goel ([Email](mailto:maanasgoel5@gmail.com), [LinkedIn](https://www.linkedin.com/in/maanas-goel/))
+### **Contributor:** Maanas Goel ([Email](mailto:maanasgoel5@gmail.com), [LinkedIn](https://www.linkedin.com/in/maanas-goel/))
 
 ---
 
