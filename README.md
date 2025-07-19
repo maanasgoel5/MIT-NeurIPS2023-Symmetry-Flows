@@ -16,40 +16,29 @@ This project demonstrates a proof-of-concept solution by building a normalizing 
 
 The key results show that this method leads to **faster convergence with a smaller, more efficient model** compared to a traditional normalizing flow that is not aware of such symmetries.
 
-## Reproducing Workshop Results
-
-Each directory contains the notebooks and trained weights to reproduce the figures in the paper.
-- **Figure 2 (Representations):**
-  - Found [here](./notebooks/DampedHarmonicOscillator/sho-reps.ipynb) for the SHO model.
-  - Found [here](./notebooks/SineGaussian/sg-reps.ipynb) for the SG model.
-- **Figure 3 (Comparison Posteriors):**
-  - Found [here](./notebooks/DampedHarmonicOscillator/sho-baseline-training.ipynb) for the SHO model.
-  - Found [here](./notebooks/SineGaussian/sine-gaussian-baseline-training.ipynb) for the SG model.
-
 ## Detailed File Manifest
 
-This section provides a detailed breakdown of the key files and notebooks within the repository.
+This section provides a detailed breakdown of the key files and notebooks within the repository. Each directory contains the notebooks and trained weights to reproduce the figures in the paper. In particular, representations in Fig. 2 of the draft are found [here](./notebooks/DampedHarmonicOscillator/sho-reps.ipynb) for the SHO model and [here](./notebooks/SineGaussian/sg-reps.ipynb) for SG models. Comparison posteriors between a trained flow model with similarity training vs. that without similarity pre-training and nested sampling in Fig. 3 of the draft are found [here](./notebooks/DampedHarmonicOscillator/sho-baseline-training.ipynb) for the SHO model and [here](./notebooks/SineGaussian/sine-gaussian-baseline-training.ipynb) for the SG model.
 
 ### reports
 
 -   `MIT_Gravitational_Waves_Research_Report_2023_Maanas_Goel.pdf`
-    -   The final, comprehensive research paper for the project.
-    -   Available on Overleaf for viewing: [https://www.overleaf.com/read/kmxckfhbvdvg](https://www.overleaf.com/read/kmxckfhbvdvg)
+    -   This is my final, comprehensive research report for the project. It can also be viewed on [Overleaf](https://www.overleaf.com/read/kmxckfhbvdvg).
 
 ### Damped Harmonic Oscillator (DHO) Notebooks
 
--   `damped-harmonic-oscillator-with-similarity-embedding-training.ipynb`
-    -   **Main experiment:** Trains the normalizing flow using a pre-trained, frozen similarity embedding network.
--   `damped-harmonic-oscillator-without-similarity-embedding-training.ipynb`
-    -   **Baseline comparison:** Trains the normalizing flow without a pre-trained similarity embedding.
--   `damped-harmonic-oscillator-moneyplot-similarity-embedding-improvement.ipynb`
-    -   **Results analysis:** Compares the training losses of the two models above and generates plots showing the improved efficiency of the similarity embedding.
+-   `damped-harmonic-oscillator-with-similarity-embedding-training.ipynb`: Trains the DHO flow using the pre-trained similarity embedding.
+-   `damped-harmonic-oscillator-without-similarity-embedding-training.ipynb`: Trains the DHO flow without the similarity embedding for baseline comparison.
+-   `damped-harmonic-oscillator-moneyplot-similarity-embedding-improvement.ipynb`: Compares losses and shows the efficiency of the similarity embedding for the DHO model.
+-   `damped-harmonic-oscillator-similarity-embedding-weights.pth`: Saved weights for the DHO similarity embedding network.
+-   `damped-harmonic-oscillator-with-similarity-embedding-flow-weights.pth`: Saved weights for the DHO flow trained *with* similarity embedding.
+-   `damped-harmonic-oscillator-without-similarity-embedding-flow-weights.pth`: Saved weights for the DHO flow trained *without* similarity embedding.
 
 ### Sine-Gaussian (SG) Notebooks
 
--   `sine-gaussian-with-similarity-embedding-training.ipynb`
-    -   **Main experiment:** Applies the same symmetry-informed methodology to the Sine-Gaussian model.
--   `sine-gaussian-without-similarity-embedding-training.ipynb`
-    -   **Baseline comparison:** Trains a baseline model for the Sine-Gaussian signal.
--   `sine-gaussian-moneyplot-similarity-embedding-improvement.ipynb`
-    -   **Results analysis:** Compares the training losses for the Sine-Gaussian models.
+-   `sine-gaussian-with-similarity-embedding-training.ipynb`: Trains the SG flow using the pre-trained similarity embedding.
+-   `sine-gaussian-without-similarity-embedding-training.ipynb`: Trains the SG flow without the similarity embedding for baseline comparison.
+-   `sine-gaussian-moneyplot-similarity-embedding-improvement.ipynb`: Compares losses and shows the efficiency of the similarity embedding for the SG model.
+-   `sine-gaussian-similarity-embedding-weights.pth`: Saved weights for the SG similarity embedding network.
+-   `sine-gaussian-with-similarity-embedding-flow-weights.pth`: Saved weights for the SG flow trained *with* similarity embedding.
+-   `sine-gaussian-without-similarity-embedding-flow-weights.pth`: Saved weights for the SG flow trained *without* similarity embedding.
