@@ -1,6 +1,6 @@
 # Optimizing Likelihood-free Inference using Self-supervised Neural Symmetry Embeddings
 
-This branch of the repository contains notebooks and weights of trained models used for ML4PS workshop submission 69 at NeurIPS 2023. The final paper draft and the poster can be found in the papers section of the workshop website. This work demonstrates likelihood-free inference (LFI) on two signal models - a damped harmonic oscillator and a sine-gaussian pulse - whose times of arrival are marginalized using self-supervised learning.
+This project was developed during a scientific research internship in Summer 2023 at the MIT LIGO Laboratory, which is hosted by the MIT Kavli Institute for Astrophysics and Space Research (MKI). LIGO is a joint effort between Caltech and MIT, supported by the National Science Foundation, focused on detecting and studying gravitational waves. This research was supervised by MIT Research Scientists Dr. Deep Chatterjee and Dr. Erik Katsavounidis, and supported by NSF award 2117997.
 
 ---
 
@@ -10,17 +10,12 @@ Likelihood-free inference using normalizing flows is a popular method for parame
 
 This project demonstrates a proof-of-concept solution by building a normalizing flow that is conditioned on a **symmetry-informed embedding network**. This pre-trained network learns to be agnostic to time shifts, allowing the main flow to focus on the intrinsic parameters of the signal (e.g., natural frequency and damping coefficient).
 
-The key results show that this method leads to **faster convergence with a smaller, more efficient model** compared to a traditional normalizing flow that is not aware of such symmetries.
+The key results show that this method leads to **faster convergence with a smaller, more efficient model** compared to a traditional normalizing flow that is not aware of such symmetries. While this work uses simplified physical models (Damped Harmonic Oscillators and Sine-Gaussians), it establishes a promising framework for real-world applications in gravitational-wave parameter estimation.
 
-## Reproducing Workshop Results
+## Key Contents & Repository Structure
 
-Each directory contains the notebooks and trained weights to reproduce the figures in the paper.
-- **Figure 2 (Representations):**
-  - Representations for the SHO model can be found in the `damped-harmonic-oscillator-reps.ipynb` notebook.
-  - Representations for the SG model can be found in the `sine-gaussian-reps.ipynb` notebook.
-- **Figure 3 (Comparison Posteriors):**
-  - Posterior comparisons for the SHO model are in the `damped-harmonic-oscillator-comparisons.ipynb` notebook.
-  - Posterior comparisons for the SG model are in the `sine-gaussian-comparisons.ipynb` notebook.
+-   **/reports**: Contains the final project report and presentation slides, which provide a detailed theoretical background and a summary of the results.
+-   **/notebooks**: Includes the Python notebooks used for the experiments, separated by the physical model used.
 
 ## Detailed File Manifest
 
