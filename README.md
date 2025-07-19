@@ -1,6 +1,10 @@
 # Optimizing Likelihood-free Inference using Self-supervised Neural Symmetry Embeddings
 
-This project was developed during a scientific research internship in Summer 2023 at the MIT LIGO Laboratory, which is hosted by the MIT Kavli Institute for Astrophysics and Space Research (MKI). LIGO is a joint effort between Caltech and MIT, supported by the National Science Foundation, focused on detecting and studying gravitational waves. This research was supervised by MIT Research Scientists Dr. Deep Chatterjee and Dr. Erik Katsavounidis, and supported by NSF award 2117997. This branch of the repository contains notebooks and weights of trained models used for the [ML4PS](https://ml4physicalsciences.github.io/2023/) workshop (submission 69) at NeurIPS 2023. The final paper draft can be found in the [papers](https://ml4physicalsciences.github.io/2023/#papers) section of the workshop website.
+This project was developed during a scientific research internship in Summer 2023 at the MIT LIGO Laboratory, which is hosted by the MIT Kavli Institute for Astrophysics and Space Research (MKI). LIGO is a joint effort between Caltech and MIT, supported by the National Science Foundation, focused on detecting and studying gravitational waves. This research was supervised by MIT Research Scientists Dr. Deep Chatterjee and Dr. Erik Katsavounidis, and supported by NSF award 2117997.
+
+This branch of the repository contains notebooks and weights of trained models used for the [ML4PS](https://ml4physicalsciences.github.io/2023/) workshop (submission 69) at NeurIPS 2023. The final paper draft can be found in the [papers](https://ml4physicalsciences.github.io/2023/#papers) section of the workshop website.
+
+**Contributor:** Maanas Goel ([Email](mailto:maanasgoel5@gmail.com), [LinkedIn](https://www.linkedin.com/in/maanas-goel/))
 
 ---
 
@@ -49,10 +53,3 @@ This section provides a detailed breakdown of the key files and notebooks within
     -   **Baseline comparison:** Trains a baseline model for the Sine-Gaussian signal.
 -   `sine-gaussian-moneyplot-similarity-embedding-improvement.ipynb`
     -   **Results analysis:** Compares the training losses for the Sine-Gaussian models.
-
----
-## Contributor
-
-**Maanas Goel**
-- **LinkedIn:** [https://www.linkedin.com/in/maanas-goel/](https://www.linkedin.com/in/maanas-goel/)
-- **Email:** [maanasgoel5@gmail.com](mailto:maanasgoel5@gmail.com)
