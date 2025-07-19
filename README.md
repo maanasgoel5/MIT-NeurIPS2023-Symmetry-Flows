@@ -1,11 +1,6 @@
-# Symmetry-Informed Normalizing Flows for Gravitational Wave Analysis
+# Optimizing Likelihood-free Inference using Self-supervised Neural Symmetry Embeddings
 
-This project was developed during a scientific research internship in Summer 2023 at the MIT LIGO Laboratory, which is hosted by the MIT Kavli Institute for Astrophysics and Space Research (MKI). LIGO is a joint effort between Caltech and MIT, supported by the National Science Foundation, focused on detecting and studying gravitational waves. This research was supervised by MIT Research Scientists Dr. Deep Chatterjee and Dr. Erik Katsavounidis, and supported by NSF award 2117997.
-
-### Contributor
-- **Maanas Goel**
-- LinkedIn: [https://www.linkedin.com/in/maanas-goel/](https://www.linkedin.com/in/maanas-goel/)
-- Email: [maanasgoel5@gmail.com](mailto:maanasgoel5@gmail.com)
+This branch of the repository contains notebooks and weights of trained models used for ML4PS workshop submission 69 at NeurIPS 2023. The final paper draft and the poster can be found in the papers section of the workshop website. This work demonstrates likelihood-free inference (LFI) on two signal models - a damped harmonic oscillator and a sine-gaussian pulse - whose times of arrival are marginalized using self-supervised learning.
 
 ---
 
@@ -15,18 +10,23 @@ Likelihood-free inference using normalizing flows is a popular method for parame
 
 This project demonstrates a proof-of-concept solution by building a normalizing flow that is conditioned on a **symmetry-informed embedding network**. This pre-trained network learns to be agnostic to time shifts, allowing the main flow to focus on the intrinsic parameters of the signal (e.g., natural frequency and damping coefficient).
 
-The key results show that this method leads to **faster convergence with a smaller, more efficient model** compared to a traditional normalizing flow that is not aware of such symmetries. While this work uses simplified physical models (Damped Harmonic Oscillators and Sine-Gaussians), it establishes a promising framework for real-world applications in gravitational-wave parameter estimation.
+The key results show that this method leads to **faster convergence with a smaller, more efficient model** compared to a traditional normalizing flow that is not aware of such symmetries.
 
-## Key Contents & Repository Structure
+## Reproducing Workshop Results
 
--   **/reports**: Contains the final project report and presentation slides, which provide a detailed theoretical background and a summary of the results.
--   **/notebooks**: Includes the Python notebooks used for the experiments, separated by the physical model used.
+Each directory contains the notebooks and trained weights to reproduce the figures in the paper.
+- **Figure 2 (Representations):**
+  - Representations for the SHO model can be found in the `damped-harmonic-oscillator-reps.ipynb` notebook.
+  - Representations for the SG model can be found in the `sine-gaussian-reps.ipynb` notebook.
+- **Figure 3 (Comparison Posteriors):**
+  - Posterior comparisons for the SHO model are in the `damped-harmonic-oscillator-comparisons.ipynb` notebook.
+  - Posterior comparisons for the SG model are in the `sine-gaussian-comparisons.ipynb` notebook.
 
 ## Detailed File Manifest
 
 This section provides a detailed breakdown of the key files and notebooks within the repository.
 
-### Documents
+### reports
 
 -   `MIT_Gravitational_Waves_Research_Report_2023_Maanas_Goel.pdf`
     -   The final, comprehensive research paper for the project.
@@ -36,40 +36,22 @@ This section provides a detailed breakdown of the key files and notebooks within
 
 -   `damped-harmonic-oscillator-with-similarity-embedding-training.ipynb`
     -   **Main experiment:** Trains the normalizing flow using a pre-trained, frozen similarity embedding network.
-    -   Demonstrates the core methodology of this project.
-
 -   `damped-harmonic-oscillator-without-similarity-embedding-training.ipynb`
     -   **Baseline comparison:** Trains the normalizing flow without a pre-trained similarity embedding.
-    -   Used to measure the performance improvement of the symmetry-informed approach.
-
 -   `damped-harmonic-oscillator-moneyplot-similarity-embedding-improvement.ipynb`
     -   **Results analysis:** Compares the training losses of the two models above and generates plots showing the improved efficiency of the similarity embedding.
-
--   `damped-harmonic-oscillator-similarity-embedding-weights.pth`
-    -   The saved weights of the trained similarity embedding network.
-
--   `damped-harmonic-oscillator-with-similarity-embedding-flow-weights.pth`
-    -   The saved weights of the main flow trained *with* the similarity embedding.
-
--   `damped-harmonic-oscillator-without-similarity-embedding-flow-weights.pth`
-    -   The saved weights of the baseline flow trained *without* the similarity embedding.
 
 ### Sine-Gaussian (SG) Notebooks
 
 -   `sine-gaussian-with-similarity-embedding-training.ipynb`
-    -   **Main experiment:** Applies the same symmetry-informed methodology to the Sine-Gaussian model, which is more representative of generic burst morphologies in gravitational-wave signals.
-
+    -   **Main experiment:** Applies the same symmetry-informed methodology to the Sine-Gaussian model.
 -   `sine-gaussian-without-similarity-embedding-training.ipynb`
     -   **Baseline comparison:** Trains a baseline model for the Sine-Gaussian signal.
-
 -   `sine-gaussian-moneyplot-similarity-embedding-improvement.ipynb`
-    -   **Results analysis:** Compares the training losses for the Sine-Gaussian models to demonstrate efficiency gains.
+    -   **Results analysis:** Compares the training losses for the Sine-Gaussian models.
 
--   `sine-gaussian-similarity-embedding-weights.pth`
-    -   The saved weights of the trained similarity embedding network for the SG model.
-
--   `sine-gaussian-with-similarity-embedding-flow-weights.pth`
-    -   The saved weights of the main flow trained *with* the similarity embedding for the SG model.
-
--   `sine-gaussian-without-similarity-embedding-flow-weights.pth`
-    -   The saved weights of the baseline flow trained *without* the similarity embedding for the SG model.
+---
+## Contributor
+- **Maanas Goel**
+- **LinkedIn:** [https://www.linkedin.com/in/maanas-goel/](https://www.linkedin.com/in/maanas-goel/)
+- **Email:** [maanasgoel5@gmail.com](mailto:maanasgoel5@gmail.com)
